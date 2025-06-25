@@ -14,7 +14,7 @@ Author: Brian Johnson
 #####################################
 
 # Import from the Python Standard library
-import pathlib
+from pathlib import Path
 import sys    
 import time  
 
@@ -22,7 +22,7 @@ import time
 import loguru
 
 # Ensure project root is in sys.path for local imports
-sys.path.append(str(pathlib.Path(__file__).resolve().parent))
+sys.path.append(str(Path(__file__).resolve().parent))
 
 # Import local modules
 import utils_Brian
@@ -40,7 +40,7 @@ logger.info("Logger loaded.")
 #####################################
 
 # Create a project path object for the root directory of the project.
-ROOT_DIR = pathlib.Path.cwd()
+ROOT_DIR = Path.cwd()
 
 REGIONS = [
     "North America", 
