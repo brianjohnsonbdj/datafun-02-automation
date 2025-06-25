@@ -111,7 +111,7 @@ def create_folders_from_list(folder_list: list, force_lowercase: bool = False, r
     '''
 
     logger.info("FUNCTION: create_folders_from_list()")
-    logger.info(f"PARAMETER: folder_list = {folder_list}")
+    logger.info(f"PARAMETER: folder_list = {folder_list}, to_lowercase = {force_lowercase}, remove_spaces = {remove_spaces}")
 
     for name in folder_list:
         original_name = name
@@ -129,7 +129,6 @@ def create_folders_from_list(folder_list: list, force_lowercase: bool = False, r
     # For each name, create a folder using ROOT_DIR / name
     # Log a message each time a folder is created
 
-    pass
 
 
   
@@ -201,7 +200,6 @@ def create_folders_periodically(duration_seconds: int, folder_count: int = 5) ->
 
         counter += 1
 
-    pass
     # Import time module from the Standard Library at the top if needed
     # Use a counter or a list to control how many folders to create
     # Wait between folder creations using time.sleep()
